@@ -36,9 +36,6 @@ This is just a high-level overview of a project combining MongoDB and Python. It
 The repository is organized as follows:
 
     .
-    ├── data                                                      # Input data
-    |   ├── ...                                                   # Original input data
-    |   └── ...                                                   # Test data for unit tests
     ├── .gitignore                                                # Git ignored files
     ├── app.py                                                    # Main script
     ├── bootstrap.sh                                              # Bootstrap script
