@@ -1,0 +1,2 @@
+DATABASE_NAME = 'bookstore_inventory'
+COLLECTION_NAME = 'books'
