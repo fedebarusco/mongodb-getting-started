@@ -9,18 +9,27 @@ This is just a high-level overview of a project combining MongoDB and Python. It
 ## Table of Contents
 * [General Information](#general-information)
 * [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Implementation Steps](#implementation-steps)
+* [MongoDB](#mongodb)
+    * [Installation](#installation)
+    * [Running MongoDB](#running-mongodb)
+    * [Basic Terms](#basic-terms)
+        * [Database](#database)
+        * [Collection](#collection)
+        * [Document](#document)
+    * [Useful Commands](#useful-commands)
+    * [Indexing](#indexing)
+        * [Indexing Methods](#indexing-methods)
+    * [Logical Operators](#logical-operators)
+    * [Advantages of MongoDB over RDBMS](#advantages-of-mongodb-over-rdbms)
 * [Project Overview](#project-overview)
-* [Functions](#functions)
-    * [min_max_dates(date_list)](#min_max_datesdate_list)
-    * [check_missing_dates(df)](#check_missing_datesdf)
-    * [check_null_countries(df)](#check_null_countriesdf)
-    * [main](#main)
-* [Tests](#tests)
-    * [test_min_max_dates](#test_min_max_dates)
-    * [test_check_missing_dates](#test_check_missing_dates)
-    * [test_check_null_countries](#test_check_null_countries)
+    * [Data Model](#data-model)
+* [Setup MongoDB](#setup-mongodb)
 * [Usage](#usage)
-
+    * [Endpoints](#endpoints)
+* [Tests](#tests)
+* [Credits](#credits)
 
 ## General Information
 
@@ -138,7 +147,7 @@ Collection is a group of documents and is similar to an RDBMS table. A collectio
 #### Document
 A document is a set of key-value pairs. Documents have dynamic schema. Dynamic schema means that documents in the same collection do not need to have the same set of fields or structure, and common fields in a collection’s documents may hold different types of data.
 
-### Useful commands
+### Useful Commands
 
 Some of the basic commands are the following ones: 
 - Finding the current database you’re in: ``test`` is the initial database that comes by default.
@@ -380,7 +389,7 @@ These are just a few examples of collections that could be included in a Booksto
 
 For this specific example, we will create only the books collection to store the following informations about each book: title, author, genre, publisher, publication date, ISBN, quantity, price.  
 
-### Setup MongoDB
+## Setup MongoDB
 
 1. Start the mongod process by running the following command: 
     ```console
@@ -439,7 +448,7 @@ The tests are only run when the script is executed directly, so, to run all the 
 python3 test.py
 ```
 
-# Credits
+## Credits
 
 - [Install MongoDB Community Edition on Ubuntu](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/)
 - [All Basics of MongoDB in 10 Minutes](https://medium.com/nerd-for-tech/all-basics-of-mongodb-in-10-minutes-baddaf6b6625)
